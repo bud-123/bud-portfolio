@@ -113,7 +113,7 @@ export const skills: Skill[] = [
 
   // Programming Languages & Frameworks
   { name: 'TypeScript', category: 'programming', level: 'advanced' },
-  { name: 'JavaScript', category: 'programming', level: 'expert' },
+  { name: 'JavaScript', category: 'programming', level: 'advanced' },
   { name: 'React', category: 'programming', level: 'advanced' },
   { name: 'Next.js', category: 'programming', level: 'advanced' },
   { name: 'Node.js', category: 'programming', level: 'advanced' },

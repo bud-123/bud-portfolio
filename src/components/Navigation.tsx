@@ -116,22 +116,10 @@ const Navigation = () => {
 
               {/* Desktop CTA */}
               <div className="hidden md:flex items-center gap-3">
-                {/* <GlassButton
-                  href="/resume.pdf"
-                  variant="secondary"
-                  size="sm"
-                >
-                  <div className="flex items-center gap-2">
-                    <Download size={14} />
-                    <span>Resume</span>
-                  </div>
-                </GlassButton> */}
-                
                 <GlassButton
                   href="#contact"
                   variant="primary"
                   size="sm"
-                  onClick={() => handleNavClick('#contact')}
                 >
                   <span>Hire Me</span>
                 </GlassButton>
@@ -199,21 +187,9 @@ const Navigation = () => {
                   className="pt-4 border-t border-white/10 space-y-3"
                 >
                   <GlassButton
-                    href="/resume.pdf"
-                    variant="secondary"
-                    size="md"
-                  >
-                    <div className="flex items-center justify-center gap-2 w-full">
-                      <Download size={16} />
-                      <span>Download Resume</span>
-                    </div>
-                  </GlassButton>
-                  
-                  <GlassButton
                     href="#contact"
                     variant="primary"
                     size="md"
-                    onClick={() => handleNavClick('#contact')}
                   >
                     <div className="flex items-center justify-center gap-2 w-full">
                       <ExternalLink size={16} />
