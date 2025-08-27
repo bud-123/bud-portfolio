@@ -113,12 +113,15 @@ export const skills: Skill[] = [
 
   // Programming Languages & Frameworks
   { name: 'TypeScript', category: 'programming', level: 'advanced' },
-  { name: 'JavaScript', category: 'programming', level: 'expert' },
+  { name: 'JavaScript', category: 'programming', level: 'advanced' },
   { name: 'React', category: 'programming', level: 'advanced' },
   { name: 'Next.js', category: 'programming', level: 'advanced' },
   { name: 'Node.js', category: 'programming', level: 'advanced' },
   { name: 'HTML/CSS', category: 'programming', level: 'advanced' },
   { name: 'Tailwind CSS', category: 'programming', level: 'advanced' },
+  { name: 'OpenAI API Integration', category: 'programming', level: 'advanced' },
+  { name: 'AI Content Generation', category: 'programming', level: 'advanced' },
+  { name: 'Natural Language Processing', category: 'programming', level: 'intermediate' },
 
   // DevOps & Deployment
   { name: 'Docker', category: 'devops', level: 'advanced' },
@@ -126,15 +129,24 @@ export const skills: Skill[] = [
   { name: 'Container Deployment', category: 'devops', level: 'advanced' },
   { name: 'Git Version Control', category: 'devops', level: 'advanced' },
   { name: 'Production Deployment', category: 'devops', level: 'advanced' },
+  { name: 'Rate Limiting & Security', category: 'devops', level: 'intermediate' },
+  { name: 'Environment Management', category: 'devops', level: 'advanced' },
+  { name: 'Logging & Monitoring', category: 'devops', level: 'intermediate' },
+  { name: 'Cron Jobs & Automation', category: 'devops', level: 'intermediate' },
 
   // Database & Backend
+  { name: 'PostgreSQL', category: 'database', level: 'advanced' },
+  { name: 'Prisma ORM', category: 'database', level: 'advanced' },
+  { name: 'Redis', category: 'database', level: 'intermediate' },
   { name: 'Firebase Authentication', category: 'database', level: 'advanced' },
   { name: 'RESTful APIs', category: 'database', level: 'advanced' },
-  { name: 'Express.js', category: 'database', level: 'intermediate' },
+  { name: 'Express.js', category: 'database', level: 'advanced' },
   { name: 'Stripe Integration', category: 'database', level: 'intermediate' },
   { name: 'State Management (Redux)', category: 'database', level: 'intermediate' },
-  { name: 'PostgreSQL', category: 'database', level: 'intermediate' },
   { name: 'Microservices Architecture', category: 'database', level: 'intermediate' },
+  { name: 'Database Migrations', category: 'database', level: 'intermediate' },
+  { name: 'Email Services Integration', category: 'database', level: 'intermediate' },
+  { name: 'Analytics Integration', category: 'database', level: 'intermediate' }
 ];
 
 export const certifications: Certification[] = [
