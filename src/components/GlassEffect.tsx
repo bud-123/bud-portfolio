@@ -2,6 +2,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 
 interface GlassEffectProps {
   children: React.ReactNode;
@@ -190,22 +191,20 @@ export const GlassButton: React.FC<{
     );
   }
 
-  // Button version: semantic <button> wrapping the glass
+  // Button version: semantic <button>
   return (
-    <button
+    <motion.button
       type="button"
       onClick={onClick}
       aria-label={ariaLabel}
-      className={`rounded-2xl inline-block ${ringClasses}`}
+      className={`rounded-2xl inline-block ${ringClasses} ${sizeClasses[size]} hover:scale-105 cursor-pointer font-medium text-center`}
+      style={variantStyles[variant]}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      transition={{ type: "spring", stiffness: 400, damping: 17 }}
     >
-      <GlassEffect
-        className={`rounded-2xl ${sizeClasses[size]} hover:scale-105 cursor-pointer font-medium text-center inline-block`}
-        style={variantStyles[variant]}
-        tone={tone}
-      >
-        <span className="transition-all duration-300">{children}</span>
-      </GlassEffect>
-    </button>
+      <span className="transition-all duration-300">{children}</span>
+    </motion.button>
   );
 };
 

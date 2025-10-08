@@ -5,7 +5,7 @@ export const projects: Project[] = [
   {
     id: '1',
     title: 'Xeddy - Full-Stack Food Ordering Platform',
-    description: 'Production React/TypeScript application with Firebase backend, featuring dual-interface architecture for customers and merchants, deployed on Google Cloud Run',
+    description: '(Password: xeddy2025) Production React/TypeScript application with Firebase backend, featuring dual-interface architecture for customers and merchants, deployed on Google Cloud Run',
     longDescription: 'Comprehensive food ordering ecosystem built with modern web technologies, targeting the $8B restaurant digitalization market. Features separate customer and merchant interfaces, integrated payments via Stripe, and real-time order management using Firebase.',
     techStack: ['React 18', 'TypeScript', 'Firebase', 'Google Cloud Run', 'Stripe', 'Redux Toolkit', 'Tailwind CSS', 'Express.js'],
     demoUrl: 'https://my-frontend-256502109115.us-central1.run.app',
@@ -100,6 +100,72 @@ export const projects: Project[] = [
       'Demonstrated iterative development with multiple production deployments',
       'Solved real user problem with clean, accessible interface design'
     ]
+  },
+  {
+    id: '4',
+    title: 'GPT-OSS Hackathon Project: Offline Real-Time Linear Algebra Tutor',
+    description: 'An innovative offline AI tutoring system providing personalized linear algebra instruction through multimodal interactions, powered by GPT-OSS.',
+    longDescription: 'Scott Bernard is an innovative offline AI tutoring system designed to provide personalized linear algebra instruction through multimodal interactions. Named after X-Men\'s Cyclops and just became we like the name Bernard, this project combines: GPT-OSS (open-source language model) for intelligent tutoring, Computer Vision for analyzing mathematical problems and student work, Speech Recognition & TTS for natural voice interactions, 3D-Printed Hardware housing a webcam as the "cyclopean eye", and Offline Operation ensuring privacy and independence from external APIs. The project journey involved planning, hardware design, Docker enhancement, multimodal development, and WebSocket implementation. It leverages remote GPU configuration for cost-effective deployment and features a modern WebSocket interface with real-time capabilities like live video feed, voice input, and instant responses.',
+    techStack: ['Python', 'Docker', 'GPT-OSS', 'Computer Vision', 'Speech Recognition', 'TTS', 'WebSocket', 'Vast.ai', 'PyTorch'],
+    demoUrl: 'https://youtube.com/shorts/zqCDlg2ybpE?feature=share', // Assuming local deployment for demo
+    githubUrl: 'https://github.com/bud-123/gpt-oss-hackathon',
+    imageUrl: '/projects/scott-bernard.PNG', // Corrected image path
+    featured: true,
+    category: 'web',
+    challenges: [
+      'Deploying an offline real-time multimodal AI tutoring system',
+      'Integrating computer vision, speech recognition, and text-to-speech capabilities',
+      'Designing and 3D printing custom hardware for webcam housing',
+      'Optimizing GPU allocation for inference with vLLM GPT-OSS',
+      'Establishing a robust WebSocket for real-time communication'
+    ],
+    solutions: [
+      'Developed a custom GPT-OSS multimodal AI tutoring system',
+      'Implemented real-time webcam and microphone support via WebSockets',
+      'Finalized 3D print design using Fusion360 for hardware integration',
+      'Utilized Vast.ai GPU rental for simplified and cost-effective deployment',
+      'Configured automated CI/CD pipelines for efficient integration and deployment'
+    ],
+    impact: [
+      'Created an offline AI tutor for linear algebra',
+      'Demonstrated advanced multimodal AI integration in a practical application',
+      'Successfully deployed and tested the system locally and remotely on Vast.ai',
+      'Provided a real-time, interactive learning experience for students',
+      'Showcased expertise in AI, hardware integration, and cloud deployment strategies'
+    ]
+  },
+  {
+    id: '5',
+    title: 'GCP Cloud Run with Terraform - Infrastructure as Code',
+    description: 'Infrastructure as Code project using Terraform to deploy a containerized "Hello World" web service to Google Cloud Run, demonstrating cloud automation and IaC best practices.',
+    longDescription: 'First Terraform project showcasing Infrastructure as Code principles by automating the deployment of a web service to Google Cloud Run. Built to learn cloud automation and IaC concepts, this project demonstrates proper Terraform configuration structure with modular files, variable management, and output handling. The deployment creates a publicly accessible web service with automatic scaling and managed infrastructure.',
+    techStack: ['Terraform', 'Google Cloud Run', 'Google Cloud Platform', 'Infrastructure as Code', 'HCL'],
+    demoUrl: 'https://hello-service-ezzrikfdra-uc.a.run.app',
+    githubUrl: 'https://github.com/bud-123/terraform-hello-world',
+    imageUrl: '/projects/gcp-terraform.png',
+    featured: true,
+    category: 'devops',
+    challenges: [
+      'Learning Terraform syntax and Infrastructure as Code principles',
+      'Configuring Google Cloud authentication and project setup',
+      'Structuring Terraform files with proper separation of concerns',
+      'Managing variables and sensitive configuration securely',
+      'Understanding Cloud Run service configuration and deployment'
+    ],
+    solutions: [
+      'Created modular Terraform configuration with separate provider, variable, and output files',
+      'Implemented gcloud authentication using application-default credentials',
+      'Built reusable infrastructure code with terraform.tfvars for environment-specific configs',
+      'Configured Cloud Run service with proper IAM policies for public access',
+      'Established declarative infrastructure with terraform apply/destroy lifecycle'
+    ],
+    impact: [
+      'Successfully deployed first Infrastructure as Code project to production',
+      'Demonstrated ability to learn and apply cloud automation tools',
+      'Created reusable Terraform templates for future Cloud Run deployments',
+      'Established foundation for managing cloud infrastructure with version control',
+      'Built practical understanding of declarative infrastructure management'
+    ]
   }
 ];
 
@@ -110,6 +176,8 @@ export const skills: Skill[] = [
   { name: 'Firebase', category: 'cloud', level: 'advanced' },
   { name: 'Firestore', category: 'cloud', level: 'advanced' },
   { name: 'Google Cloud Build', category: 'cloud', level: 'intermediate' },
+  { name: 'Google Compute Engine', category: 'cloud', level: 'intermediate' },
+  { name: 'Google Cloud Storage', category: 'cloud', level: 'intermediate' },
 
   // Programming Languages & Frameworks
   { name: 'TypeScript', category: 'programming', level: 'advanced' },
@@ -125,6 +193,8 @@ export const skills: Skill[] = [
 
   // DevOps & Deployment
   { name: 'Docker', category: 'devops', level: 'advanced' },
+  { name: 'Terraform', category: 'devops', level: 'intermediate' },
+  { name: 'Infrastructure as Code', category: 'devops', level: 'intermediate' },
   { name: 'CI/CD Pipelines', category: 'devops', level: 'intermediate' },
   { name: 'Container Deployment', category: 'devops', level: 'advanced' },
   { name: 'Git Version Control', category: 'devops', level: 'advanced' },
