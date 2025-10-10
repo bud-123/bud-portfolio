@@ -27,6 +27,7 @@ export interface Project {
     date: string;
     credentialId?: string;
     badgeUrl?: string;
+    certificateUrl?: string;
   }
   
   export interface ContactForm {
